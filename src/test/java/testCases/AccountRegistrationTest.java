@@ -18,8 +18,6 @@ public class AccountRegistrationTest extends BaseClass{
         registrationPage.clickSubmitButton();
         Thread.sleep(3000);
         Assert.assertEquals(homePage.isUserpicImgDisplayed(),true);
-//        Assert.assertTrue(isElementPresent(By.xpath(".user-pic"),10),"No user pic");
-//        System.out.println(isElementPresent(By.className(".user-pic")));
         Assert.assertEquals(getCurrentUrl(),"https://conduit.bondaracademy.com/");
     }
 
@@ -35,13 +33,6 @@ public class AccountRegistrationTest extends BaseClass{
         Thread.sleep(3000);
         Assert.assertEquals(registrationPage.isEmailErrorMsgDisplayed(),true);
         Assert.assertEquals(registrationPage.isPasswordErrorMsgDisplayed(),true);
-//        Assert.assertTrue(isElementPresent(By.xpath("//li[text()='email is invalid']"),3),"Email error msg not shown");
-//        System.out.println(isElementPresent(By.xpath("//li[text()='email is invalid']"),3));
-//        Assert.assertTrue(isElementPresent(By.xpath("//li[text()='password is too short (minimum is 8 characters)']"),3),"Password error msg not shown");
-//        System.out.println(isElementPresent(By.xpath("//li[text()='password is too short (minimum is 8 characters)']");
-//        Assert.assertTrue(isElementPresent(By.xpath(".user-pic")),"No user pic");
-//        Assert.assertEquals(registrationPage.getEmailErrorText(),"email is invalid","Email error msg not shown");
-//        Assert.assertEquals(registrationPage.getPasswordErrorText(),"password is too short (minimum is 8 characters)","Password error msg not shown");
     }
 
 }
